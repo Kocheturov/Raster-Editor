@@ -1,41 +1,47 @@
 class TextTool:
     """
-    Класс TextTool
+    Класс TextTool предназначен для работы с текстовыми блоками.
     """
+
     def __init__(self):
+        """
+        Инициализирует экземпляр TextTool без активного текстового блока.
+        """
         self.active_text_box = None
 
     def add_text(self, text, position):
-        """Создание нового текстового блока
+        """
+        Создает новый текстовый блок с заданным текстом и позицией.
 
-        Args:
-          text: string.
-          position: int.
-    
-        Returns:
-          Text box.
+        Аргументы:
+            text (str): Текст для нового текстового блока.
+            position (tuple): Позиция нового текстового блока (x, y).
+
+        Возвращает:
+            TextBox: Созданный текстовый блок.
         """
         text_box = TextBox(text, position)
         self.active_text_box = text_box
         return text_box
 
     def edit_text(self, text):
-        """Редактирование активного текстового блока
+        """
+        Редактирует текст активного текстового блока.
 
-        Args:
-          text: string.
-    
+        Аргументы:
+            text (str): Новый текст для активного текстового блока.
         """
         # 
         if self.active_text_box:
             self.active_text_box.text = text
 
     def handle_input(self, event):
-        """Обработка ввода пользователя для редактирования текста
+        """
+        Обрабатывает ввод пользователя для редактирования текста в 
+        активном текстовом блоке.
 
-        Args:
-          event: event.
-
+        Аргументы:
+            event (Event): Событие ввода пользователя для обработки.
         """
         if self.active_text_box:
             # ...
