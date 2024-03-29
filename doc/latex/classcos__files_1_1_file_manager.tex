@@ -1,0 +1,73 @@
+\doxysection{File\+Manager Class Reference}
+\hypertarget{classcos__files_1_1_file_manager}{}\label{classcos__files_1_1_file_manager}\index{FileManager@{FileManager}}
+\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Public Attributes}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс для управления файлами, включая открытие, сохранение, 
+проверку поддерживаемых форматов, импорт и экспорт изображений.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcos__files_1_1_file_manager_a28634514249c862453045137e091a246}\label{classcos__files_1_1_file_manager_a28634514249c862453045137e091a246} 
+\index{FileManager@{FileManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр FileManager с заданным списком 
+поддерживаемых форматов файлов.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classcos__files_1_1_file_manager_a11beea9527ae952bc2d54470602c6f99}\label{classcos__files_1_1_file_manager_a11beea9527ae952bc2d54470602c6f99} 
+\index{FileManager@{FileManager}!is\_supported\_format@{is\_supported\_format}}
+\index{is\_supported\_format@{is\_supported\_format}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{is\_supported\_format()}{is\_supported\_format()}}
+{\footnotesize\ttfamily is\+\_\+supported\+\_\+format (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Проверяет, поддерживается ли формат файла.
+
+Аргументы:
+    filename (str): Имя файла для проверки.
+
+Возвращает:
+    bool: True, если формат поддерживается, False - иначе.
+\end{DoxyVerb}
+ \Hypertarget{classcos__files_1_1_file_manager_aa933e43fd6b0dafc2616ac819c9663db}\label{classcos__files_1_1_file_manager_aa933e43fd6b0dafc2616ac819c9663db} 
+\index{FileManager@{FileManager}!open\_file@{open\_file}}
+\index{open\_file@{open\_file}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{open\_file()}{open\_file()}}
+{\footnotesize\ttfamily open\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Открывает файл изображения.
+
+Аргументы:
+    filename (str): Имя файла изображения.
+
+Вызывает:
+    ValueError: Если формат файла не поддерживается.
+\end{DoxyVerb}
+ \Hypertarget{classcos__files_1_1_file_manager_abc2ea2b6972ac4e299bdbbceee6bd67e}\label{classcos__files_1_1_file_manager_abc2ea2b6972ac4e299bdbbceee6bd67e} 
+\index{FileManager@{FileManager}!save\_file@{save\_file}}
+\index{save\_file@{save\_file}!FileManager@{FileManager}}
+\doxysubsubsection{\texorpdfstring{save\_file()}{save\_file()}}
+{\footnotesize\ttfamily save\+\_\+file (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{filename,  }\item[{}]{format }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Сохраняет файл изображения в заданном формате.
+
+Аргументы:
+    filename (str): Имя файла для сохранения.
+    format (str): Формат файла для сохранения.
+
+Вызывает:
+    ValueError: Если формат файла не поддерживается.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/cos\+\_\+files.\+py\end{DoxyCompactItemize}

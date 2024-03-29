@@ -1,0 +1,63 @@
+\doxysection{Correction\+Tool Class Reference}
+\hypertarget{classadjust_1_1_correction_tool}{}\label{classadjust_1_1_correction_tool}\index{CorrectionTool@{CorrectionTool}}
+\doxysubsubsection*{Public Member Functions}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс предоставляет инструменты для настройки и коррекции свойств 
+изображения, включая уровни, кривые и цветовой баланс.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classadjust_1_1_correction_tool_ab84a4dca46f74678bde29ec0e99f6457}\label{classadjust_1_1_correction_tool_ab84a4dca46f74678bde29ec0e99f6457} 
+\index{CorrectionTool@{CorrectionTool}!adjust\_color\_balance@{adjust\_color\_balance}}
+\index{adjust\_color\_balance@{adjust\_color\_balance}!CorrectionTool@{CorrectionTool}}
+\doxysubsubsection{\texorpdfstring{adjust\_color\_balance()}{adjust\_color\_balance()}}
+{\footnotesize\ttfamily adjust\+\_\+color\+\_\+balance (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{image,  }\item[{}]{shadows,  }\item[{}]{midtones,  }\item[{}]{highlights }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Корректирует цветовой баланс изображения путем настройки теней, 
+средних тонов и светлых участков.
+
+Аргументы:
+    image (Image): Изображение для настройки.
+    shadows (tuple): Кортеж, представляющий настройку цвета для теней.
+    midtones (tuple): Кортеж, представляющий настройку цвета для 
+                      средних тонов.
+    highlights (tuple): Кортеж, представляющий настройку цвета для 
+                        светлых участков.
+\end{DoxyVerb}
+ \Hypertarget{classadjust_1_1_correction_tool_a3cffeb83f75e91898bebe4100e3d177b}\label{classadjust_1_1_correction_tool_a3cffeb83f75e91898bebe4100e3d177b} 
+\index{CorrectionTool@{CorrectionTool}!adjust\_curves@{adjust\_curves}}
+\index{adjust\_curves@{adjust\_curves}!CorrectionTool@{CorrectionTool}}
+\doxysubsubsection{\texorpdfstring{adjust\_curves()}{adjust\_curves()}}
+{\footnotesize\ttfamily adjust\+\_\+curves (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{image,  }\item[{}]{curve }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Точно настраивает тональное распределение изображения с 
+использованием заданной кривой.
+
+Аргументы:
+    image (Image): Изображение для настройки.
+    curve (Curve): Объект кривой, определяющий тональное 
+                   отображение.
+\end{DoxyVerb}
+ \Hypertarget{classadjust_1_1_correction_tool_aa19e7893089ffb97f9883b042bbef80e}\label{classadjust_1_1_correction_tool_aa19e7893089ffb97f9883b042bbef80e} 
+\index{CorrectionTool@{CorrectionTool}!adjust\_levels@{adjust\_levels}}
+\index{adjust\_levels@{adjust\_levels}!CorrectionTool@{CorrectionTool}}
+\doxysubsubsection{\texorpdfstring{adjust\_levels()}{adjust\_levels()}}
+{\footnotesize\ttfamily adjust\+\_\+levels (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{image,  }\item[{}]{input\+\_\+levels,  }\item[{}]{output\+\_\+levels }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Изменяет тональный диапазон изображения путем сопоставления 
+входных уровней с выходными уровнями.
+
+Аргументы:
+    image (Image): Изображение для настройки.
+    input_levels (tuple): Кортеж, представляющий диапазон входных уровней.
+    output_levels (tuple): Кортеж, представляющий желаемый диапазон 
+                          выходных уровней.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/adjust.\+py\end{DoxyCompactItemize}

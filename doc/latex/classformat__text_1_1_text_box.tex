@@ -1,0 +1,104 @@
+\doxysection{Text\+Box Class Reference}
+\hypertarget{classformat__text_1_1_text_box}{}\label{classformat__text_1_1_text_box}\index{TextBox@{TextBox}}
+\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Public Attributes}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс представляет текстовый блок с настраиваемым текстом, 
+позицией, форматированием и возможностью трансформации.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classformat__text_1_1_text_box_aa728c82e00a7c15e19da9fe74971b867}\label{classformat__text_1_1_text_box_aa728c82e00a7c15e19da9fe74971b867} 
+\index{TextBox@{TextBox}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{text,  }\item[{}]{position }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр TextBox.
+
+Аргументы:
+    text (str): Текст для текстового блока.
+    position (tuple): Позиция текстового блока (x, y).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classformat__text_1_1_text_box_acb234ab5dc356eb69aea994ef9f1370c}\label{classformat__text_1_1_text_box_acb234ab5dc356eb69aea994ef9f1370c} 
+\index{TextBox@{TextBox}!set\_font\_family@{set\_font\_family}}
+\index{set\_font\_family@{set\_font\_family}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{set\_font\_family()}{set\_font\_family()}}
+{\footnotesize\ttfamily set\+\_\+font\+\_\+family (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{font\+\_\+family }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Устанавливает семейство шрифтов для текстового блока.
+
+Аргументы:
+    font_family (str): Название семейства шрифтов.
+\end{DoxyVerb}
+ \Hypertarget{classformat__text_1_1_text_box_a8e796de98c7c6fd8a31a763b72dff04f}\label{classformat__text_1_1_text_box_a8e796de98c7c6fd8a31a763b72dff04f} 
+\index{TextBox@{TextBox}!set\_font\_size@{set\_font\_size}}
+\index{set\_font\_size@{set\_font\_size}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{set\_font\_size()}{set\_font\_size()}}
+{\footnotesize\ttfamily set\+\_\+font\+\_\+size (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{font\+\_\+size }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Устанавливает размер шрифта для текстового блока.
+
+Аргументы:
+    font_size (int): Размер шрифта.
+\end{DoxyVerb}
+ \Hypertarget{classformat__text_1_1_text_box_a7a02cbbfe9f7489dca8c65a5897ea4a5}\label{classformat__text_1_1_text_box_a7a02cbbfe9f7489dca8c65a5897ea4a5} 
+\index{TextBox@{TextBox}!transform@{transform}}
+\index{transform@{transform}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{transform()}{transform()}}
+{\footnotesize\ttfamily transform (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type,  }\item[{\texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*}}]{kwargs }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Трансформирует текстовый блок (поворот, масштабирование).
+
+Аргументы:
+    type (str): Тип трансформации (например, "rotate", "scale").
+    **kwargs: Дополнительные аргументы для трансформации.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classformat__text_1_1_text_box_a18c251a926339fe88ffc7a448e25329c}\label{classformat__text_1_1_text_box_a18c251a926339fe88ffc7a448e25329c} 
+\index{TextBox@{TextBox}!font\_family@{font\_family}}
+\index{font\_family@{font\_family}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{font\_family}{font\_family}}
+{\footnotesize\ttfamily font\+\_\+family}
+
+\begin{DoxyVerb}Устанавливает семейство шрифтов для текстового блока.
+
+Аргументы:
+    font_family (str): Название семейства шрифтов.
+\end{DoxyVerb}
+ \Hypertarget{classformat__text_1_1_text_box_ae352d5727e97fc9aa0e71d6510550c12}\label{classformat__text_1_1_text_box_ae352d5727e97fc9aa0e71d6510550c12} 
+\index{TextBox@{TextBox}!font\_size@{font\_size}}
+\index{font\_size@{font\_size}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{font\_size}{font\_size}}
+{\footnotesize\ttfamily font\+\_\+size}
+
+\begin{DoxyVerb}Устанавливает размер шрифта для текстового блока.
+
+Аргументы:
+    font_size (int): Размер шрифта.
+\end{DoxyVerb}
+ \Hypertarget{classformat__text_1_1_text_box_af575f17e6be3f269b86b041a60560dbf}\label{classformat__text_1_1_text_box_af575f17e6be3f269b86b041a60560dbf} 
+\index{TextBox@{TextBox}!text@{text}}
+\index{text@{text}!TextBox@{TextBox}}
+\doxysubsubsection{\texorpdfstring{text}{text}}
+{\footnotesize\ttfamily text}
+
+\begin{DoxyVerb}Инициализирует экземпляр TextBox.
+
+Аргументы:
+    text (str): Текст для текстового блока.
+    position (tuple): Позиция текстового блока (x, y).
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/format\+\_\+text.\+py\end{DoxyCompactItemize}

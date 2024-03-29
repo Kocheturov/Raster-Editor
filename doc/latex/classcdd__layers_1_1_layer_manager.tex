@@ -1,0 +1,72 @@
+\doxysection{Layer\+Manager Class Reference}
+\hypertarget{classcdd__layers_1_1_layer_manager}{}\label{classcdd__layers_1_1_layer_manager}\index{LayerManager@{LayerManager}}
+\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Public Attributes}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс для управления слоями, включая создание, удаление и 
+дублирование.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classcdd__layers_1_1_layer_manager_a28634514249c862453045137e091a246}\label{classcdd__layers_1_1_layer_manager_a28634514249c862453045137e091a246} 
+\index{LayerManager@{LayerManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!LayerManager@{LayerManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр LayerManager с пустым списком слоев.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classcdd__layers_1_1_layer_manager_a1b28c2ea1cdd3f04194e39105d340377}\label{classcdd__layers_1_1_layer_manager_a1b28c2ea1cdd3f04194e39105d340377} 
+\index{LayerManager@{LayerManager}!create\_layer@{create\_layer}}
+\index{create\_layer@{create\_layer}!LayerManager@{LayerManager}}
+\doxysubsubsection{\texorpdfstring{create\_layer()}{create\_layer()}}
+{\footnotesize\ttfamily create\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{name = {\ttfamily "{}New~Layer"{}} }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Создает новый слой с заданным именем и добавляет его в список 
+слоев.
+
+Аргументы:
+    name (str, optional): Имя нового слоя. По умолчанию "New Layer".
+
+Возвращает:
+    Layer: Созданный слой.
+\end{DoxyVerb}
+ \Hypertarget{classcdd__layers_1_1_layer_manager_aaf3b76f73f043b60e5510c366c27502d}\label{classcdd__layers_1_1_layer_manager_aaf3b76f73f043b60e5510c366c27502d} 
+\index{LayerManager@{LayerManager}!delete\_layer@{delete\_layer}}
+\index{delete\_layer@{delete\_layer}!LayerManager@{LayerManager}}
+\doxysubsubsection{\texorpdfstring{delete\_layer()}{delete\_layer()}}
+{\footnotesize\ttfamily delete\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{layer\+\_\+index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Удаляет слой по его индексу.
+
+Аргументы:
+    layer_index (int): Индекс слоя для удаления.
+
+Вызывает:
+    ValueError: Если индекс слоя неверен.
+\end{DoxyVerb}
+ \Hypertarget{classcdd__layers_1_1_layer_manager_aa98f8d303147b4cf4861323ed97e8aed}\label{classcdd__layers_1_1_layer_manager_aa98f8d303147b4cf4861323ed97e8aed} 
+\index{LayerManager@{LayerManager}!duplicate\_layer@{duplicate\_layer}}
+\index{duplicate\_layer@{duplicate\_layer}!LayerManager@{LayerManager}}
+\doxysubsubsection{\texorpdfstring{duplicate\_layer()}{duplicate\_layer()}}
+{\footnotesize\ttfamily duplicate\+\_\+layer (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{layer\+\_\+index }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Дублирует слой по его индексу и добавляет копию в список слоев.
+
+Аргументы:
+    layer_index (int): Индекс слоя для дублирования.
+
+Вызывает:
+    ValueError: Если индекс слоя неверен.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/cdd\+\_\+layers.\+py\end{DoxyCompactItemize}

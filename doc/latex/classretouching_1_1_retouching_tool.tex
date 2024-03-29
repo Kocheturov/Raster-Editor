@@ -1,0 +1,47 @@
+\doxysection{Retouching\+Tool Class Reference}
+\hypertarget{classretouching_1_1_retouching_tool}{}\label{classretouching_1_1_retouching_tool}\index{RetouchingTool@{RetouchingTool}}
+\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Public Attributes}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс представляет инструмент для ретуширования изображений с 
+настраиваемым типом.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classretouching_1_1_retouching_tool_aa5280d480ed65541cb18008e8c681066}\label{classretouching_1_1_retouching_tool_aa5280d480ed65541cb18008e8c681066} 
+\index{RetouchingTool@{RetouchingTool}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!RetouchingTool@{RetouchingTool}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр RetouchingTool.
+
+Аргументы:
+    type (str): Тип инструмента ретуширования (например, 
+                "healing_brush", "clone_stamp").
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classretouching_1_1_retouching_tool_a28bb7c99a54b066808dd88803c02303e}\label{classretouching_1_1_retouching_tool_a28bb7c99a54b066808dd88803c02303e} 
+\index{RetouchingTool@{RetouchingTool}!apply\_retouching@{apply\_retouching}}
+\index{apply\_retouching@{apply\_retouching}!RetouchingTool@{RetouchingTool}}
+\doxysubsubsection{\texorpdfstring{apply\_retouching()}{apply\_retouching()}}
+{\footnotesize\ttfamily apply\+\_\+retouching (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{image,  }\item[{}]{source\+\_\+area,  }\item[{}]{target\+\_\+area }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Применяет ретушь к изображению в соответствии с типом 
+инструмента.
+
+Аргументы:
+    image (Image): Изображение, к которому нужно применить ретушь.
+    source_area (tuple): Область-источник для ретуширования.
+    target_area (tuple): Область-цель для ретуширования.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/retouching.\+py\end{DoxyCompactItemize}

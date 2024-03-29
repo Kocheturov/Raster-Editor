@@ -1,0 +1,64 @@
+\doxysection{Drawing\+Tool Class Reference}
+\hypertarget{classbasic__draw_1_1_drawing_tool}{}\label{classbasic__draw_1_1_drawing_tool}\index{DrawingTool@{DrawingTool}}
+\doxysubsubsection*{Public Member Functions}
+\doxysubsubsection*{Public Attributes}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Представляет инструмент рисования с настраиваемыми свойствами, 
+такими как тип, размер, цвет и форма. Обрабатывает события 
+ввода пользователя для выполнения действий рисования.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classbasic__draw_1_1_drawing_tool_aa5280d480ed65541cb18008e8c681066}\label{classbasic__draw_1_1_drawing_tool_aa5280d480ed65541cb18008e8c681066} 
+\index{DrawingTool@{DrawingTool}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!DrawingTool@{DrawingTool}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{type }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр DrawingTool.
+
+Аргументы:
+    type (str): Тип инструмента рисования (например, "brush", "pencil").
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classbasic__draw_1_1_drawing_tool_a69c37989cf9cba18bf7b0a8dee159153}\label{classbasic__draw_1_1_drawing_tool_a69c37989cf9cba18bf7b0a8dee159153} 
+\index{DrawingTool@{DrawingTool}!activate@{activate}}
+\index{activate@{activate}!DrawingTool@{DrawingTool}}
+\doxysubsubsection{\texorpdfstring{activate()}{activate()}}
+{\footnotesize\ttfamily activate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Активирует инструмент рисования, делая его готовым к вводу 
+пользователя.
+\end{DoxyVerb}
+ \Hypertarget{classbasic__draw_1_1_drawing_tool_a2a77ff0bc9c5e736aba6d45ea2622b38}\label{classbasic__draw_1_1_drawing_tool_a2a77ff0bc9c5e736aba6d45ea2622b38} 
+\index{DrawingTool@{DrawingTool}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!DrawingTool@{DrawingTool}}
+\doxysubsubsection{\texorpdfstring{deactivate()}{deactivate()}}
+{\footnotesize\ttfamily deactivate (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Деактивирует инструмент рисования, прекращая его реакцию на 
+ввод пользователя.
+\end{DoxyVerb}
+ \Hypertarget{classbasic__draw_1_1_drawing_tool_a4c7a61e454fb836f05f70ad14846d8fa}\label{classbasic__draw_1_1_drawing_tool_a4c7a61e454fb836f05f70ad14846d8fa} 
+\index{DrawingTool@{DrawingTool}!handle\_input@{handle\_input}}
+\index{handle\_input@{handle\_input}!DrawingTool@{DrawingTool}}
+\doxysubsubsection{\texorpdfstring{handle\_input()}{handle\_input()}}
+{\footnotesize\ttfamily handle\+\_\+input (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{event }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Обрабатывает события ввода пользователя (например, щелчки мыши, 
+перемещения) и выполняет действия рисования в зависимости от 
+типа инструмента.
+
+Аргументы:
+    event (Event): Событие ввода пользователя для обработки.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/basic\+\_\+draw.\+py\end{DoxyCompactItemize}

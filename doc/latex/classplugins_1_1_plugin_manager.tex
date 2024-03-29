@@ -1,0 +1,62 @@
+\doxysection{Plugin\+Manager Class Reference}
+\hypertarget{classplugins_1_1_plugin_manager}{}\label{classplugins_1_1_plugin_manager}\index{PluginManager@{PluginManager}}
+\doxysubsubsection*{Public Member Functions}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс для управления плагинами, включая загрузку, получение и запуск.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classplugins_1_1_plugin_manager_a28634514249c862453045137e091a246}\label{classplugins_1_1_plugin_manager_a28634514249c862453045137e091a246} 
+\index{PluginManager@{PluginManager}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!PluginManager@{PluginManager}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Инициализирует экземпляр PluginManager.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classplugins_1_1_plugin_manager_a3269ae0315042e4106ba9aeba9553e58}\label{classplugins_1_1_plugin_manager_a3269ae0315042e4106ba9aeba9553e58} 
+\index{PluginManager@{PluginManager}!get\_plugin@{get\_plugin}}
+\index{get\_plugin@{get\_plugin}!PluginManager@{PluginManager}}
+\doxysubsubsection{\texorpdfstring{get\_plugin()}{get\_plugin()}}
+{\footnotesize\ttfamily get\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin\+\_\+name }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Возвращает плагин по его имени.
+
+Аргументы:
+    plugin_name (str): Имя плагина.
+
+Возвращает:
+    Plugin: Объект плагина, если он найден, иначе None.
+\end{DoxyVerb}
+ \Hypertarget{classplugins_1_1_plugin_manager_a6908fd2e6b763ccfa1f559674cff7e70}\label{classplugins_1_1_plugin_manager_a6908fd2e6b763ccfa1f559674cff7e70} 
+\index{PluginManager@{PluginManager}!load\_plugins@{load\_plugins}}
+\index{load\_plugins@{load\_plugins}!PluginManager@{PluginManager}}
+\doxysubsubsection{\texorpdfstring{load\_plugins()}{load\_plugins()}}
+{\footnotesize\ttfamily load\+\_\+plugins (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Загружает доступные плагины.
+\end{DoxyVerb}
+ \Hypertarget{classplugins_1_1_plugin_manager_aec4fd6cc45500e41ed4e1955e9686ec5}\label{classplugins_1_1_plugin_manager_aec4fd6cc45500e41ed4e1955e9686ec5} 
+\index{PluginManager@{PluginManager}!run\_plugin@{run\_plugin}}
+\index{run\_plugin@{run\_plugin}!PluginManager@{PluginManager}}
+\doxysubsubsection{\texorpdfstring{run\_plugin()}{run\_plugin()}}
+{\footnotesize\ttfamily run\+\_\+plugin (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{plugin\+\_\+name,  }\item[{}]{image }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Запускает плагин с заданным именем и применяет его к 
+изображению.
+
+Аргументы:
+    plugin_name (str): Имя плагина.
+    image (Image): Изображение, к которому нужно применить плагин.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/plugins.\+py\end{DoxyCompactItemize}

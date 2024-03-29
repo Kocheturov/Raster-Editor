@@ -1,0 +1,48 @@
+\doxysection{Automation\+Manager Class Reference}
+\hypertarget{classactions_1_1_automation_manager}{}\label{classactions_1_1_automation_manager}\index{AutomationManager@{AutomationManager}}
+\doxysubsubsection*{Public Member Functions}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}Класс для управления задачами автоматизации, включая пакетную обработку 
+изображений, запись и выполнение пользовательских действий.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function/\+Procedure/\+Process Documentation}
+\Hypertarget{classactions_1_1_automation_manager_aa8033dcb32c63fbcfb852a8189f35e7a}\label{classactions_1_1_automation_manager_aa8033dcb32c63fbcfb852a8189f35e7a} 
+\index{AutomationManager@{AutomationManager}!record\_action@{record\_action}}
+\index{record\_action@{record\_action}!AutomationManager@{AutomationManager}}
+\doxysubsubsection{\texorpdfstring{record\_action()}{record\_action()}}
+{\footnotesize\ttfamily record\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Начинает запись пользовательского действия. 
+Последующие действия, выполняемые пользователем, будут 
+записываться до вызова метода `stop_recording`.
+\end{DoxyVerb}
+ \Hypertarget{classactions_1_1_automation_manager_a1cdca5df2d16ed044d512eaaccaa2a1f}\label{classactions_1_1_automation_manager_a1cdca5df2d16ed044d512eaaccaa2a1f} 
+\index{AutomationManager@{AutomationManager}!run\_action@{run\_action}}
+\index{run\_action@{run\_action}!AutomationManager@{AutomationManager}}
+\doxysubsubsection{\texorpdfstring{run\_action()}{run\_action()}}
+{\footnotesize\ttfamily run\+\_\+action (\begin{DoxyParamCaption}\item[{}]{self,  }\item[{}]{action\+\_\+name,  }\item[{}]{image }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Выполняет ранее записанное действие над предоставленным изображением.
+
+Аргументы:
+    action_name (str): Имя, присвоенное записанному действию.
+    image (Image): Объект изображения, к которому должно быть 
+                  применено действие.
+\end{DoxyVerb}
+ \Hypertarget{classactions_1_1_automation_manager_ab3801699c2e7852005031c0a46389bd8}\label{classactions_1_1_automation_manager_ab3801699c2e7852005031c0a46389bd8} 
+\index{AutomationManager@{AutomationManager}!stop\_recording@{stop\_recording}}
+\index{stop\_recording@{stop\_recording}!AutomationManager@{AutomationManager}}
+\doxysubsubsection{\texorpdfstring{stop\_recording()}{stop\_recording()}}
+{\footnotesize\ttfamily stop\+\_\+recording (\begin{DoxyParamCaption}\item[{}]{self }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Останавливает запись текущего пользовательского действия.
+\end{DoxyVerb}
+ 
+
+The documentation for this design unit was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Raster-\/\+Editor/Программа/actions.\+py\end{DoxyCompactItemize}
